@@ -35,7 +35,9 @@ if ($conn->connect_error) {
             echo('</tr>');
      }
         echo('</table>'."<br>");
-        //echo("zmiany");
+        echo("zmiany");
+        $d=strtotime("now");
+        echo "<li>".date("Y-m-d h:i:sa", $d) . "<br>";
 
 ?>
     <form action="insert2.php" method="POST">
